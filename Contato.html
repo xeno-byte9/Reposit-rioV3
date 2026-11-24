@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entre em contato com Heitor Inácio Ribeiro.">
+  <title>Contato | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="exampleFormControlInput" class="form-label mb-2">Nome</label>
-    <input type="name" class="form-control" id="exampleFormControlInput" placeholder="Seu nome">
+  <header class="site-header">
+    <a class="brand" href="index.html">Meu Portfólio</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="Conhecimento.html">Conhecimentos</a>
+      <a href="Têndencias.html">Tendências</a><a href="Galeria.html">Galeria</a><a href="Contato.html" aria-current="page">Contato</a>
+    </nav>
+  </header>
+  <main class="container narrow">
+    <section class="page-heading">
+      <p class="eyebrow">Vamos conversar</p>
+      <h1>Entre em contato</h1>
+      <p>Preencha os campos abaixo. Os dados serão armazenados somente neste navegador, usando o armazenamento local.</p>
+    </section>
 
-    <label for="exampleFormControlInput" class="form-label mb-2">Email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput" placeholder="name@example.com">
+    <form id="contact-form" class="contact-form">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" autocomplete="name" maxlength="100" required>
 
-    <label for="exampleFormControlInput" class="form-label mb-2">Mensagem</label>
-    <input type="message" class="form-control" id="exampleFormControlInput" placeholder="Texto">
-    
-    <footer>
-        <a href="index.html"><li>Voltar para a página Inicial</li></a>
-    </footer>
-    
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email" maxlength="150" required>
+
+      <label for="telefone">Telefone (opcional)</label>
+      <input type="tel" id="telefone" name="telefone" autocomplete="tel" maxlength="30">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="6" maxlength="2000" required></textarea>
+
+      <button class="button" type="submit">Salvar mensagem neste dispositivo</button>
+      <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+  </main>
+  <footer class="site-footer"><p>© <span class="year"></span> Heitor Inácio Ribeiro</p></footer>
+  <script src="Localstorage.js" defer></script>
 </body>
 </html>

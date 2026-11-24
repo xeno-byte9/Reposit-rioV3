@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áreas do Conhecimento</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Áreas do conhecimento e aprendizados.">
+  <title>Áreas do Conhecimento | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="carouselStackedIndicators" class="carousel slide">
-    <div class="carousel-inner rounded-5">
-      <div class="carousel-item active">
-        <h1>Ciências Humanas</h1>
-        <img src="human-brain.png" class="d-block w-100" alt="...">
-        <li>Não Agregou</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Ciências da Natureza </h1>
-        <img src="science-book.png" class="d-block w-100" alt="...">
-        <li>Não Agregou</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Matemática</h1>
-        <img src="calculating.png" class="d-block w-100" alt="...">
-        <li>Permitiu que eu pudesse entender como fazer cálculos utilizando-se da programação</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Línguagens</h1>
-        <img src="language.png" class="d-block w-100" alt="...">
-        <li>Facilitou a criação dos códigos pelo o aumento da compreensão da língua inglêsa</li>
-      </div>
-    </div>
-    <div class="d-flex justify-content-between align-items-center">
-      <div>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
-          <span class="carousel-icon-prev" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
-          <span class="carousel-icon-next" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-    </div>
-  </div>
-  <footer>
-  <a href="index.html"><li>Voltar para a página Inicial</li></a>
-  </footer>
+  <header class="site-header">
+    <a class="brand" href="index.html">Meu Portfólio</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="Conhecimento.html" aria-current="page">Conhecimentos</a>
+      <a href="Têndencias.html">Tendências</a><a href="Galeria.html">Galeria</a><a href="Contato.html">Contato</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Formação</p>
+      <h1>Áreas do Conhecimento</h1>
+      <p>Algumas das aprendizagens desenvolvidas durante minha trajetória escolar.</p>
+    </section>
+
+    <section class="cards-grid">
+      <article class="info-card">
+        <img src="human-brain.png" alt="Ilustração representando ciências humanas" loading="lazy">
+        <div><h2>Ciências Humanas</h2><p>As atividades dessa área contribuíram para ampliar minha compreensão da sociedade, da história e das relações humanas.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="science-book.png" alt="Ilustração de um livro de ciências" loading="lazy">
+        <div><h2>Ciências da Natureza</h2><p>Os estudos ajudaram a desenvolver o raciocínio científico e a compreensão de fenômenos naturais.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="calculating.png" alt="Ilustração relacionada a cálculos matemáticos" loading="lazy">
+        <div><h2>Matemática</h2><p>Permitiu compreender melhor a lógica dos cálculos e suas aplicações na programação.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="language.png" alt="Ilustração relacionada a idiomas" loading="lazy">
+        <div><h2>Linguagens</h2><p>Contribuiu para a comunicação e para a compreensão de conteúdos técnicos em inglês, facilitando o aprendizado de programação.</p></div>
+      </article>
+    </section>
+    <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+  </main>
+  <footer class="site-footer"><p>© <span class="year"></span> Heitor Inácio Ribeiro</p></footer>
+  <script src="Localstorage.js" defer></script>
 </body>
 </html>

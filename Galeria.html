@@ -1,63 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galeria de atividades e projetos.">
+  <title>Galeria de Projetos | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="carouselStackedIndicators" class="carousel slide">
-    <div class="carousel-inner rounded-5">
-      <div class="carousel-item active">
-        <h1>Atividade 1</h1>
-        <img src="Captura de tela 2026-11-22 124219.png" class="d-block w-100" alt="...">
-        <li>Foi a primeira atividade usando criando um site, onde separamos quais foram as atividades mais marcante de cada área de ensino</li>
-        <br><li>Link do Repositório: https://github.com/xeno-byte9/Atividade.git</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Atividade 2</h1>
-        <img src="Captura de tela 2026-11-22 124238.png" class="d-block w-100" alt="...">
-        <li>Foi uma atividade em que o tema era o esporte olimpico infantil</li>
-        <br><li>Link do Repositório: https://github.com/xeno-byte9/Atividade-2.git</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Atividade 2.2</h1>
-        <img src="Captura de tela 2026-11-22 124304.png" class="d-block w-100" alt="...">
-        <li>Foi a primeira vez que usamos o CSS na criação de um site</li>
-        <br><li>Link do Repositório: https://github.com/xeno-byte9/Atividade-2.2.git</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Bootsrap</h1>
-        <img src="Captura de tela 2026-11-22 124317.png" class="d-block w-100" alt="...">
-        <li>Nesta atividade tivesmos que criar um site usando o bootstrap de auxilio</li>
-        <br><li>Link do Repositório: https://github.com/xeno-byte9/Bootstrap.git</li>
-      </div>
-    </div>
-    <div class="d-flex justify-content-between align-items-center">
-      <div>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
-          <span class="carousel-icon-prev" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
-          <span class="carousel-icon-next" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <a href="index.html"><li>Voltar para a página Inicial</li></a>
-  </footer>
+  <header class="site-header">
+    <a class="brand" href="index.html">Meu Portfólio</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="Conhecimento.html">Conhecimentos</a>
+      <a href="Têndencias.html">Tendências</a><a href="Galeria.html" aria-current="page">Galeria</a><a href="Contato.html">Contato</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Experiência prática</p>
+      <h1>Galeria de projetos</h1>
+      <p>Atividades realizadas durante o percurso de aprendizagem.</p>
+    </section>
+    <section class="cards-grid">
+      <article class="project-card">
+        <img src="Captura de tela 2026-11-22 124219.png" alt="Captura de tela do primeiro projeto" loading="lazy">
+        <div><h2>Atividade 1</h2><p>Primeira atividade de criação de um site, apresentando atividades marcantes de cada área de ensino.</p><a href="https://github.com/xeno-byte9/Atividade" target="_blank" rel="noopener noreferrer">Ver repositório</a></div>
+      </article>
+      <article class="project-card">
+        <img src="Captura de tela 2026-11-22 124238.png" alt="Captura de tela do projeto sobre esporte olímpico infantil" loading="lazy">
+        <div><h2>Atividade 2</h2><p>Atividade cujo tema foi o esporte olímpico infantil.</p><a href="https://github.com/xeno-byte9/Atividade-2" target="_blank" rel="noopener noreferrer">Ver repositório</a></div>
+      </article>
+      <article class="project-card">
+        <img src="Captura de tela 2026-11-22 124304.png" alt="Captura de tela de atividade utilizando CSS" loading="lazy">
+        <div><h2>Atividade 2.2</h2><p>Primeira experiência utilizando CSS na criação de um site.</p><a href="https://github.com/xeno-byte9/Atividade-2.2" target="_blank" rel="noopener noreferrer">Ver repositório</a></div>
+      </article>
+      <article class="project-card">
+        <img src="Captura de tela 2026-11-22 124317.png" alt="Captura de tela de projeto desenvolvido com Bootstrap" loading="lazy">
+        <div><h2>Atividade Bootstrap</h2><p>Desenvolvimento de um site utilizando o framework Bootstrap como apoio.</p><a href="https://github.com/xeno-byte9/Bootstrap" target="_blank" rel="noopener noreferrer">Ver repositório</a></div>
+      </article>
+    </section>
+    <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+  </main>
+  <footer class="site-footer"><p>© <span class="year"></span> Heitor Inácio Ribeiro</p></footer>
+  <script src="Localstorage.js" defer></script>
 </body>
 </html>

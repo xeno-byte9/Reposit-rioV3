@@ -1,58 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Têndencias</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tendências tecnológicas e seus conceitos.">
+  <title>Tendências Tecnológicas | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="carouselStackedIndicators" class="carousel slide">
-    <div class="carousel-inner rounded-5">
-      <div class="carousel-item active">
-        <h1>Cibersegurança</h1>
-        <img src="https://www.projetodraft.com/wp-content/uploads/2018/05/ciberseguran%C3%A7a.png" class="d-block w-100" alt="...">
-        <li>A forma de proteger o seu computador de perigos externos</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Blockchain</h1>
-        <img src="https://emilyandblair.com/wp-content/uploads/2022/12/blockchain.jpg" class="d-block w-100" alt="...">
-        <li>Sistema de registro de informações e moedas privada</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Automação</h1>
-        <img src="https://tuenkers.com.br/wp-content/uploads/2024/07/automacao-industrial-confira-os-tipos-de-automacao-existentes-01.jpg" class="d-block w-100" alt="...">
-        <li>Formas físicas e digitais de automatizar a produção de produtos</li>
-      </div>
-      <div class="carousel-item">
-        <h1>Edge Computing</h1>
-        <img src="https://ideausher.com/wp-content/uploads/2022/10/Edge-computing-image.webp" class="d-block w-100" alt="...">
-        <li>É a aplicação corporativa das fontes de dados</li>
-      </div>
-    </div>
-    <div class="d-flex justify-content-between align-items-center">
-      <div>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
-          <span class="carousel-icon-prev" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
-          <span class="carousel-icon-next" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <a href="index.html"><li>Voltar para a página Inicial</li></a>
-  </footer>
+  <header class="site-header">
+    <a class="brand" href="index.html">Meu Portfólio</a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="Conhecimento.html">Conhecimentos</a>
+      <a href="Têndencias.html" aria-current="page">Tendências</a><a href="Galeria.html">Galeria</a><a href="Contato.html">Contato</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Tecnologia</p>
+      <h1>Tendências tecnológicas</h1>
+      <p>Conheça alguns conceitos relevantes para o cenário atual da tecnologia.</p>
+    </section>
+    <section class="cards-grid">
+      <article class="info-card">
+        <img src="https://www.projetodraft.com/wp-content/uploads/2018/05/ciberseguran%C3%A7a.png" alt="Representação de cibersegurança" loading="lazy">
+        <div><h2>Cibersegurança</h2><p>Conjunto de práticas, tecnologias e processos usados para proteger sistemas, redes, dispositivos e dados contra ataques e acessos não autorizados.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="https://emilyandblair.com/wp-content/uploads/2022/12/blockchain.jpg" alt="Representação de blockchain" loading="lazy">
+        <div><h2>Blockchain</h2><p>Tecnologia de registro distribuído que organiza informações em blocos conectados e protegidos por mecanismos criptográficos.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="https://tuenkers.com.br/wp-content/uploads/2024/07/automacao-industrial-confira-os-tipos-de-automacao-existentes-01.jpg" alt="Automação de processos industriais" loading="lazy">
+        <div><h2>Automação</h2><p>Uso de tecnologias para executar tarefas e processos com menor intervenção manual, aumentando a produtividade e a consistência.</p></div>
+      </article>
+      <article class="info-card">
+        <img src="https://ideausher.com/wp-content/uploads/2022/10/Edge-computing-image.webp" alt="Representação de edge computing" loading="lazy">
+        <div><h2>Edge Computing</h2><p>Modelo de computação que processa dados próximo de onde são produzidos, reduzindo a latência e a necessidade de enviar tudo para um servidor distante.</p></div>
+      </article>
+    </section>
+    <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+  </main>
+  <footer class="site-footer"><p>© <span class="year"></span> Heitor Inácio Ribeiro</p></footer>
+  <script src="Localstorage.js" defer></script>
 </body>
 </html>
